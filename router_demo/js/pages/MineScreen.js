@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
-import { View, Text,Image,StyleSheet,ImageBackground,TouchableOpacity,Alert,NativeModules } from 'react-native';
+import { View, Text,Image,StyleSheet,ImageBackground,TouchableOpacity,Alert } from 'react-native';
 import PropTypes from 'prop-types';
 import config from '../config';
 
@@ -33,13 +33,10 @@ export default class MineScreen extends Component {
     }
 
     _pushHelpPage(){
-        const QXUrlManager = NativeModules.QXUrlManager;
-        QXUrlManager.push('QXMineViewController',{})
+        
     }
 
     _pushAboutPage(){
-        const QXUrlManager = NativeModules.QXUrlManager;
-        QXUrlManager.pop()
     }
 
     _userLoginOut(){
