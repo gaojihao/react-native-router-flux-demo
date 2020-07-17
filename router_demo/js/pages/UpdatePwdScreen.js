@@ -3,9 +3,6 @@ import {View,Text,TextInput,TouchableOpacity,StyleSheet,ToastAndroid,Platform} f
 import config from '../config';
 
 export default class UpdatePWDScreen extends Component {
-  static navigationOptions = {
-    title: '修改密码',
-  };
 
   constructor(props) {
     super(props);
